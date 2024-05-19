@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 const coloursList = [
@@ -20,14 +20,30 @@ const coloursList = [
 ];
 
 const App = () => {
+  const [selectedColour, setSelectedColour] = useState(""); // with more time i would change this to an array to allow muliple selections
+
   const LondonStoneSwatches = () => {
     return coloursList.map((colour) => (
-      <div className="swatch" key={colour.name}>
+      <div
+        className="swatch"
+        key={colour.name}
+        onClick={() => {
+          setSelectedColour(colour.name);
+        }}
+      >
         <div style={{ display: "flex", justifyContent: "left" }}>
           <div
-            className="colour-circle"
-            style={{ backgroundColor: colour.colour }}
-          />
+            className="selected-colour-ring"
+            style={{
+              borderColor:
+                selectedColour === colour.name ? "orange" : "transparent",
+            }} // when a swatch is clicked, it will update the selectedColour state, which will change the border from transparent to orange
+          >
+            <div
+              className="colour-circle"
+              style={{ backgroundColor: colour.colour }}
+            />
+          </div>
           <p className="name-and-number">{colour.name}</p>
         </div>
         <div style={{ display: "flex", justifyContent: "right" }}>
