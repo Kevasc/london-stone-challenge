@@ -1,8 +1,6 @@
 
 # London Stone Challenge
 
-A brief description of what this project does and who it's for
-
 
 
 ## How to run colour swatch filter:
