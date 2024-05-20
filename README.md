@@ -26,7 +26,7 @@ Given more time, I would change line 23 ```
 const [selectedColour, setSelectedColour] = useState("")``` to use an array to allow for multiple selections by pushing new values onto the array and filtering out to remove.
 
 I decided to give all the colours a light grey background, as I feel it improves the UI if every colour has the same uniform border.
-The borders do not have a profound effect on darker colours such as the blue or green, but on the cream and white it clearly defines the outline of the colour to make them stand out from the background.
+The border does not have a profound effect on darker colours such as the blue or green, but on the cream and white it clearly defines the outline of the colour to make them stand out from the background.
  
 For storing data, I would suggest using key-value pairs to store in a database. Key = name of the data, value would be the colour component. 
 
