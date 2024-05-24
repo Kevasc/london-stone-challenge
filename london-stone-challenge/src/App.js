@@ -36,7 +36,7 @@ const App = () => {
             className="selected-colour-ring"
             style={{
               borderColor:
-                selectedColour === colour.name ? "orange" : "transparent",
+                selectedColour === colour.name ? "pink" : "transparent",
             }} // when a swatch is clicked, it will update the selectedColour state, which will change the border from transparent to orange
           >
             <div
