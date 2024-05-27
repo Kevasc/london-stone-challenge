@@ -31,7 +31,7 @@
   z-index: 10;
 }
 
-.selected-colour-ring {
+.selected-colour-swatch {
   border: 2px solid orange;
   background-color: transparent;
   border-radius: 100%;

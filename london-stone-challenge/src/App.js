@@ -33,7 +33,7 @@ const App = () => {
       >
         <div style={{ display: "flex", justifyContent: "left" }}>
           <div
-            className="selected-colour-ring"
+            className="selected-colour-swatch"
             style={{
               borderColor:
                 selectedColour === colour.name ? "pink" : "transparent",
