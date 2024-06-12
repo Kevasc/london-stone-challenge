@@ -1,7 +1,7 @@
 
 # London Stone Challenge
 
-
+This is a code challenge I completed as part of a technical interview for London Stone. 
 
 ## How to run colour swatch filter:
 
