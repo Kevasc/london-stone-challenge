@@ -102,7 +102,7 @@ function displayShowrooms() {
       divEl.append(spanEl); //'append' takes 'spanEl' and appends it to the end of 'divEl' eg:'(1)'
 
       insertElement.append(divEl);
-      showroomCount += 1; // can use += operator to do same thing
+      showroomCount + 1; // can use += operator to do same thing
     });
   }
  // no return, need to add in 
